@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Converter App</title>
+</head>
+<body>
+  
+ <div class="container">
+  <div class="display-4 text-center py-5"><u>Converter</u></div>
+	<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-weight-tab" data-toggle="tab" href="#nav-weight" role="tab" aria-controls="nav-home" aria-selected="true">Weight</a>
+      <a class="nav-item nav-link" id="nav-temperature-tab" data-toggle="tab" href="#nav-temperature" role="tab" aria-controls="nav-profile" aria-selected="false">Temperature</a>
+      <a class="nav-item nav-link" id="nav-length-tab" data-toggle="tab" href="#nav-length" role="tab" aria-controls="nav-contact" aria-selected="false">Length</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-weight" role="tabpanel" aria-labelledby="nav-weight-tab">
+      <div class="row mt-4">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="kg">Kilograms</label>
+            <input type="number" class="form-control" oninput="weightKg(this.value)" onchange="weightKg(this.value)" id="kg" placeholder="Kilograms">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="pound">Pounds</label>
+            <input type="number" class="form-control" oninput="weightPound(this.value)" onchange="weightPound(this.value)" id="pound" placeholder="Pounds">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="gram">Grams</label>
+            <input type="number" class="form-control" oninput="weightGram(this.value)" onchange="weightGram(this.value)" id="gram" placeholder="Grams">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="ounce">Ounces</label>
+            <input type="number" class="form-control" oninput="weightOunce(this.value)" onchange="weightOunce(this.value)" id="ounce" placeholder="Ounces">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-temperature" role="tabpanel" aria-labelledby="nav-temperature-tab">
+      <div class="row mt-4">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="celsius">Celsius</label>
+            <input type="number" class="form-control" oninput="temperatureCelsius(this.value)" onchange="temperatureCelsius(this.value)" id="celsius" placeholder="Celsius">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" class="form-control" oninput="temperatureFahrenheit(this.value)" onchange="temperatureFahrenheit(this.value)" id="fahrenheit" placeholder="Fahrenheit">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="kelvin">Kelvin</label>
+            <input type="number" class="form-control" oninput="temperatureKelvin(this.value)" onchange="temperatureKelvin(this.value)" id="kelvin" placeholder="Kelvin">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-length" role="tabpanel" aria-labelledby="nav-length-tab">
+      <div class="row mt-4">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="feet">Feet</label>
+            <input type="number" class="form-control" oninput="lengthFeet(this.value)" onchange="lengthFeet(this.value)" id="feet" placeholder="Feet">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="meters">Meters</label>
+            <input type="number" class="form-control" oninput="lengthMeter(this.value)" onchange="lengthMeter(this.value)" id="meters" placeholder="Meters">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="inches">Inches</label>
+            <input type="number" class="form-control" oninput="lengthInches(this.value)" onchange="lengthInches(this.value)" id="inches" placeholder="Inches">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="cm">CM</label>
+            <input type="number" class="form-control" oninput="lengthCm(this.value)" onchange="lengthCm(this.value)" id="cm" placeholder="CM">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="yards">Yards</label>
+            <input type="number" class="form-control" oninput="lengthYard(this.value)" onchange="lengthYard(this.value)" id="yards" placeholder="Yards">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="kilometers">Kilometers</label>
+            <input type="number" class="form-control" oninput="lengthKilometer(this.value)" onchange="lengthKilometer(this.value)" id="kilometers" placeholder="Kilometers">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="miles">Miles</label>
+            <input type="number" class="form-control" oninput="lengthMile(this.value)" onchange="lengthMile(this.value)" id="miles" placeholder="Miles">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/jquery-slim-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+</body>
+</html>
